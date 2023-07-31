@@ -1,14 +1,3 @@
-Document Predicting Mortgage-Backed Securities Prepayment Risk
-This machine learning experiment seeks to foretell whether a borrower will become ever delinquent on their home loan. Ever delinquent indicates that the borrower has missed payments for a predetermined amount of time, usually 90 days or more.
-As part of the project, a dataset comprising details on previous loans will be cleaned, examined, and analysed in order to build a predictive model using machine learning methods. The finished model will help financial institutions identify high-risk borrowers and prevent loan defaults.The information we have comes from One of the biggest mortgage finance organisations in the United States, Freddie Mac, contributed the publicly accessible dataset that was used in this project.The dataset includes historical loan performance information for single-family mortgages purchased by Freddie Mac between 1999 and 2020.
-
-
-The dataset for this project contains data on past mortgage loan characteristics (e.g., loan amount, loan type, interest rate, etc.), as well as information on the borrower (e.g., credit score, income, employment status, etc.), the property (e.g., property type, location, appraised value, etc.), and additional variables that may influence the likelihood of delinquency. The dataset also contains statistics on whether each loan has ever fallen delinquent on payments.
-
-
-So formost important step for any ML project is data preprocessing as it helps ensure that the data is in a suitable format for analysis and model training. 
-Data Cleaning is done, Checked for missing values,null values, duplicates values, outliers, and inconsistencies in the dataset. Impute missing values('FirstTimeHomebuyer','PPM','NumBorrowers')with mode and mean value,also removed some records ('ProductType','PostalCode','LoanSeqNum') as needed.Also filled null values( 'Seller name') with mode.
-Once the data is preprocessed, it often needs to be encoded into a numerical format so that it can be used as input for machine learning algorithms. 
-Categorical Encoding Convert categorical variables (e.g.,'FirstTimeHomebuyer', 'Occupancy', 'Channel', 'PPM', 'PropertyType', 'LoanPurpose') into numerical representations using techniques like one-hot encoding or label encoding.Here we have opted for one-hot encoding for nominal variables (Occupancy,Channel,PropertyType,LoanPurpose) & label encoder for ordinal variables (PPM and FirstTimeHomebuyer).
-For data labeling part its the target variable, which is the variable to be predicted. In this case, the target variable is the EverDelinquent & Prepayment indicator, which typically takes binary values i;e 0 or 1.Also converted the dates to datetime objects i;e ("FirstPaymentDate" and "MaturityDate") and calculated the number of months.
-Did categorization to some columns ('CreditScore','LTV') and assiged the values into specified ranges. For 'CreditScore' its new column 'Credit Category' with specfic label i;e 'Poor', 'Fair', 'Good', 'Excellent' & for LTV its new column 'LTV Category' with specfic label i;e 'LOW', 'MED', 'HIGH'.
+# TechnoHacks_Task1
+Task 1 : Perform Data Cleaning in titanic Dataset, Here i ve removed missing values and outliers using IQR 
+Also visualize the missing values and outliers and did comparsion between them.
